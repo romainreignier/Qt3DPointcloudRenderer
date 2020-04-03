@@ -74,6 +74,7 @@ set(BUILD_EXAMPLE ON CACHE BOOL "Build the example project")
 
 if(BUILD_EXAMPLE)
     add_subdirectory(example)
+    add_subdirectory(simple_example)
 endif(BUILD_EXAMPLE)
 
 add_library(Qt3DPointcloudRenderer ${SOURCE} ${HEADER} ${LIBLAS_SOURCES} ${LASZIP_SOURCES})
